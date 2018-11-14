@@ -1,19 +1,19 @@
 'use strict';
 
-const gulp = require('gulp');
-const compass = require('gulp-compass');
-const clean = require('gulp-clean');
-const changed = require('gulp-changed');
-const useref = require('gulp-useref');
-const fileinclude = require('gulp-file-include');
-const gulpSequence = require('gulp-sequence');
-const plumber = require("gulp-plumber");
-const imagemin = require('gulp-imagemin');
-const imageminPngquant = require('imagemin-pngquant');
-const browserSync = require('browser-sync');
-const reload = browserSync.reload;
-const pump = require('pump');
-var uglify = require('gulp-uglify');
+const gulp = require('gulp');//主模块
+const compass = require('gulp-compass');//compass
+const clean = require('gulp-clean');//清除文件
+const changed = require('gulp-changed');//只拷贝改变的文件
+const useref = require('gulp-useref');//资源合并
+const fileinclude = require('gulp-file-include');//公共代码引用
+const gulpSequence = require('gulp-sequence');//顺序执行任务
+const plumber = require("gulp-plumber");//错误跳出
+const imagemin = require('gulp-imagemin');//图片压缩
+const imageminPngquant = require('imagemin-pngquant');//png图片压缩
+const browserSync = require('browser-sync');//浏览器同步
+const reload = browserSync.reload;//浏览器同步
+const pump = require('pump');//更容易定位错误的插件
+const uglify = require('gulp-uglify');//js压缩
 
 const config = {
   sassFilePath: "./dev/assets/sass/**/*.scss",
@@ -28,7 +28,6 @@ const config = {
   tplPath: "./dev/tpl/res/*.tpl",
   rbPath: "./config.rb"
 }
-
 
 gulp.task('imgmin', function () {
   const pngq = imageminPngquant({

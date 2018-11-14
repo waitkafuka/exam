@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/**首页（应用管理）**/
+
+.yygl-content-wrap {
+    padding: 50px;
+    .xgk-icon-morenyingyong {
+        color: #8195df;
+        font-size: 17px;
+    }
+}
+
+.font-bold-16 { 
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.app-entry-wrap {
+    @extend .clearfix;
+    .app-entry-box {
+        width: 262px;
+        height: 200px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        margin-left: 50px;
+        margin-top: 50px;
+        // background-color: #6381ef;
+        float: left;
+        position: relative;
+        &:hover {
+            opacity: .8;
+        }
+        .app-bg-img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+        }
+        &.xuanke {
+            // background-color: #28aad2;
+            .iconfont {
+                color: #28aad2;
+            }
+        }
+        &.shengyaguihua {
+            // background-color: #23ad44;
+            .iconfont {
+                color: #23ad44;
+            }
+        }
+        .icon-box {
+            width: 86px;
+            height: 86px;
+            line-height: 86px;
+            border-radius: 50%;
+            margin-top: 34px;
+            background-color: rgba(255, 255, 255, .8);
+            display: inline-block;
+        }
+        .iconfont {
+            font-size: 53px;
+            color: #6381ef;
+        }
+        p {
+            position: absolute;
+            top: 150px;
+            width: 100%;
+        }
+    }
+}

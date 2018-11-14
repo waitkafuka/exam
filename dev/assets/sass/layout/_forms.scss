@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* form表单相关 */
+
+.form-wrap {
+  border: 1px solid $bd-color;
+  border-radius: 3px;
+  .label-info {
+    margin-right: 0;
+  }
+  .input-control {
+    border: none;
+    outline: none;
+    height: 30px;
+    // width: 70%;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.label-info {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75px;
+  font-size: 0.937em;
+  // margin-right: 5px;
+  text-align: right;
+  color: $gray50;
+  &.widen {
+    width: 85px;
+  }
+  &.non {
+    &:before {
+      content: "";
+    }
+  }
+  &:before {
+    content: "*";
+    color: red;
+    position: absolute;
+    margin: 0.2em 0 0 -0.6em;
+  }
+}
+
+.label {
+  display: inline-block;
+  width: 70px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.address-input {
+  // height: 28px;
+  width: 70%;
+  border: none;
+  outline: none;
+  color: $gray80;
+  vertical-align: middle;
+  &.return-order {
+    border: 1px solid $bg-color;
+    border-radius: 3px;
+  }
+}
+
+.select-group {
+  width: 100%;
+  padding-left: 75px;
+  // padding-right:10px;
+  margin-top: -30px;
+  .public-select {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .error-hint {
+    padding-left: 0;
+  }
+}
+
+.public-select {
+  border-radius: 3px;
+  width: 45%;
+  height: 30px;
+  border: 1px solid $bg-color;
+  &.return-order {
+    text-indent: 5px;
+    width: 77%;
+  }
+}
+
+.error-hint {
+  color: red;
+  @extend .title-l;
+  padding-left: 80px;
+  margin-top: 5px;
+  display: none;
+  &.default {
+    margin-top: -5px;
+    display: block;
+    color: $gray20;
+  }
+}
+
+.pagination-wrap{
+  padding: 22px 0;
+  color:#777;
+  font-size: 12px;
+  text-align: right;
+  .page-info{
+    margin-right: 20px;
+  }
+  ul{
+    display: inline-block;
+    vertical-align: middle;
+    li{
+      height: 25px;
+      box-sizing: border-box;
+      line-height: 23px;
+      border:1px solid #c4c4c4;
+      padding: 0 10px;
+      text-align: center;
+      border-radius: 2px;
+      float: left;
+      margin-left: 5px;
+      cursor: pointer;
+      &.active,&:hover{
+        background-color: #d9dff6;
+        color:#8195df;
+        border-color: #8195df;
+      }
+      &.disabled{
+        cursor: not-allowed;
+        background-color: #fff;
+        color:#ccc;
+        border-color:#ccc;
+      }
+      
+    }
+  }
+}

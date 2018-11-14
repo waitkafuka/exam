@@ -1,0 +1,53 @@
+@charset "UTF-8";
+// a {
+//     @include link-color(#333, #666, #999);
+// }
+
+
+/* 文本溢出隐藏 */
+
+.text-overflow {
+    @include ellipsis();
+}
+
+.lists-text{
+    font-size: px2em(14px);
+    color: $gray50;
+    li{
+        margin-bottom: 1.5em;
+        line-height: 1.6;
+    }
+}
+/* 清除浮动 */
+
+.clearfix {
+    @include pie-clearfix();
+}
+
+.title {
+    @at-root {
+        #{&}-xxl {
+            font-size:px2em(18px); //1.125em; //18px
+        }
+        #{&}-xl {
+            font-size: px2em(16px);//1em; //16px
+        }
+        #{&}-m {
+            font-size:px2em(14px); //0.875em; //14px
+        }
+        #{&}-ms {
+            font-size: px2em(13px);//0.813em; //13px
+        }
+        #{&}-l {
+            font-size:px2em(12px);// 0.75em; //12px
+        }
+        #{&}-s {
+            font-size:px2em(11px); //0.688em; //11px
+        }
+        #{&}-xs {
+            font-size:px2em(10px);// 0.625em; //10px
+        }
+    }
+}
+
+

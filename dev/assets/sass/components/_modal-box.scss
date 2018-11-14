@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* 模态框*/
+
+// 遮盖
+.ui-cover {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background: #000;
+  z-index: 20;
+  @include opacity(.4);
+}
+
+.ui-modal-wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  min-width: 600px;
+  z-index: 21;
+  @extend .title-ms;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ui-modal {
+  background-color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 14px;
+  
+   @extend .bdbt;
+   .modal-title{
+     float: left;
+     color:#777;
+   }
+  p {
+    @extend .s-gray50;
+  }
+  .close-wrap{
+    line-height: 40px;
+    background: #eceff1;
+    padding: 0 20px;
+    .iconfont{
+      color:#ccc;
+      cursor: pointer;
+      &:hover{
+        color:#999;
+      }
+    }
+  }
+}
+
+.modal-control-wrap {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  .btn{
+    margin-left: 100px;
+  }
+  .btn:first-child{
+    margin-left: 0;
+  }
+}

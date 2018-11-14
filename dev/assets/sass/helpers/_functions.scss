@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* functions */
+
+.fn {
+    @at-root {
+        #{&}-lt {
+            float: left;
+        }
+        #{&}-rt {
+            float: right;
+        }
+        #{&}-tac {
+            text-align: center;
+        }
+        #{&}-tar {
+            text-align: right;
+        }
+        #{&}-tal {
+            text-align: left;
+        }
+        #{&}-db {
+            display: black;
+        }
+        #{&}-dib {
+            display: inline-block;
+        }
+        #{&}-dn {
+            display: none;
+        }
+        #{&}-psr {
+            position: relative;
+        }
+        #{&}-psa {
+            position: absolute;
+        }
+        #{&}-psf {
+            position: fixed;
+        }
+        #{&}-vam {
+            vertical-align: middle;
+        }
+    }
+}
+
+.mtb10 {
+    margin: 10px auto;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.pdb50 {
+    padding-bottom: 50px;
+}
+
+.pdtb10 {
+    padding: 10px 0;
+}
+
+.bdbt {
+    border-bottom: 1px solid $bd-color;
+}
+
+.bdbt1 {
+    border-bottom: 1px solid $bg-color;
+}
+
+.pd10 {
+    padding: 10px;
+}
+
+.bdt {
+    border-top: 1px solid $bd-color;
+}
+
+.bdtp {
+    border-top: 1px solid $bg-color;
+}
+
+.bg-white {
+    background-color: #FFF!important;
+}
+
+.filter-blur {
+    @extend .ui-cover;
+    display: block !important;
+    // filter: url(blur.svg#blur);
+    // -webkit-filter: blur(10px);
+    // -moz-filter: blur(10px);
+    // -ms-filter: blur(10px);
+    // filter: blur(10px);
+    // filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);
+}
+
+.fn-pof {
+    position: fixed;
+    bottom: 0px;
+}

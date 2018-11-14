@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* 表格 */
+.table{
+    width: 100%;
+}
+.table th,.table td{
+    padding: 3px 0;
+}
+
+.list-table{
+    width: 100%;
+    border:2px solid #e5e6eb;
+    background: #fff;
+    tr th{
+        background-color: #eceff3;
+        line-height: 36px;
+        border:1px solid #e5e6eb;
+        border-bottom-width:2px;
+    }
+    td{
+        text-align: center;
+        border:1px solid #e5e6eb;
+        line-height: 26px;
+        padding: 8px 0;
+    }
+    tr:nth-child(even){
+        background: #f9fafb;
+    }
+    tr:hover{
+        background: #f9fafb;
+    }
+}

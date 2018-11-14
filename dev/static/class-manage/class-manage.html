@@ -1,0 +1,194 @@
+@@include('../../tpl/res/header.tpl',{
+"title":"学易新高考"
+})
+@@include('../../tpl/res/sidebar.tpl',{
+"currentPosition":"班级管理"
+})
+<!--主体部分-->
+<div class="main-container">
+    @@include('../../tpl/res/bread-box.tpl',{
+    "currentPosition":"班级管理"
+    })
+    <div class="main-content-box">
+        <div class="tm-content-wrap">
+            <!--筛选条件-->
+            <div class="filter-box-wrap">
+                <div class="filter-box">
+                    <span class="filter-name fl">年级：</span>
+                    <a class="filter-item filter-all fl active" href="#">全部</a>
+                    <div class="filter-item-box fl">
+                        <a href="#" class="active">高中一年级</a>
+                        <a href="#">高中二年级</a>
+                        <a href="#">高中三年级</a>
+                    </div>
+                </div>
+            </div>
+            <!--工具条-->
+            <div class="tool-bar-wrap">
+                <span class="btn btn-orange J-add-class">
+                    <i class="iconfont xgk-icon-tianjia"></i>
+                    添加班级
+                </span>
+                <span class="btn btn-orange J-import-class">
+                    <i class="iconfont xgk-icon-piliangtianjia"></i>
+                    批量添加
+                </span>
+            </div>
+            <!--列表-->
+            <table class="list-table">
+                <tr>
+                    <th class="w50"></th>
+                    <th>年级</th>
+                    <th>班级</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>高中一年级</td>
+                    <td>1班</td>
+                    <td>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-bianji"></i>
+                            编辑
+                        </a>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-shanchu"></i>
+                            删除
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>高中一年级</td>
+                    <td>1班</td>
+                    <td>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-bianji"></i>
+                            编辑
+                        </a>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-shanchu"></i>
+                            删除
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>高中一年级</td>
+                    <td>1班</td>
+                    <td>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-bianji"></i>
+                            编辑
+                        </a>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-shanchu"></i>
+                            删除
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>高中一年级</td>
+                    <td>1班</td>
+                    <td>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-bianji"></i>
+                            编辑
+                        </a>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-shanchu"></i>
+                            删除
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>高中一年级</td>
+                    <td>1班</td>
+                    <td>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-bianji"></i>
+                            编辑
+                        </a>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-shanchu"></i>
+                            删除
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <div class="oper-box">
+                <span class="all-select-wrap w50">
+                    <input type="checkbox" id="select-all">
+                </span>
+                <label for="select-all">全选</label>
+                <span class="btn btn-gray">
+                    删除
+                </span>
+            </div>
+            <div class="pagination-wrap">
+                <span class="page-info">
+                    20条/页
+                </span>
+                <span class="page-info">
+                    共999条
+                </span>
+                <ul>
+                    <li class="disabled">
+                        上一页
+                    </li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li class="active">5</li>
+                    <li>···</li>
+                    <li>100</li>
+                    <li>101</li>
+                    <li>102</li>
+                    <li>下一页</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--添加班级 弹窗内容 只是个模板，弹窗弹出后，该内容会被删除，移动到弹窗内-->
+<div class="add-tc-content-box" style="display:none">
+    <ul>
+        <li>
+            <span class="item-name">选择年级：</span>
+            <select name="" id="" class="add-class-select">
+                <option value="1">高中一年级</option>
+                <option value="2">高中二年级</option>
+                <option value="3">高中三年级</option>
+            </select>
+        </li>
+        <li>
+            <span class="item-name">班级名称：</span>
+            <input type="text" class="input" placeholder="例如：1班">
+        </li>
+    </ul>
+</div>
+<!--导入班级弹窗-->
+<div class="import-tc-content-box">
+    <ul>
+        <li>
+            <span class="item-name">选择年级：</span>
+            <select name="" id="" class="import-class-select">
+                <option value="11">高中一年级</option>
+                <option value="22">高中二年级</option>
+                <option value="33">高中三年级</option>
+            </select>
+        </li>
+        <li>
+            <span class="item-name">班级数量：</span>
+            <input type="text" class="input" placeholder="例如：5">
+        </li>
+    </ul>
+</div>
+@@include('../../tpl/res/js.tpl')
+<script src="../../assets/js/class-manage/class-manage.js"></script>
+</body>
+
+</html>

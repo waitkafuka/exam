@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* header*/
+
+$header-height:65px;
+.header {
+    height: $header-height;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.user-center-wrap {
+    float: right;
+    position: relative;
+    &:hover {
+        .user-down-box {
+            display: block;
+        }
+        .user-show-box {
+            .iconfont {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    .user-show-box {
+        cursor: pointer;
+        height: $header-height;
+        line-height: $header-height;
+        color: #fff;
+        .user-header-img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            margin-left: 10px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .iconfont {
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+            transition: all .3s;
+            font-size: 12px;
+        }
+    }
+    .user-down-box {
+        width: 260px;
+        background-color: #fff;
+        position: absolute;
+        right: 10px;
+        box-shadow: 0 0 5px 0 #e6e8ea;
+        display: none;
+        z-index: 10;
+        top: $header-height + 1;
+        .username-box {
+            height: 75px;
+            line-height: 75px;
+            padding: 0 15px;
+            border-bottom: 1px solid #f3f3f3;
+            .header-img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 7px;
+                vertical-align: middle;
+            }
+        }
+        .userinfo-detail {
+            margin: 18px 25px;
+            width: auto;
+            min-height: 155px;
+            li {
+                padding: 3px 0;
+            }
+        }
+        .person-title {
+            color: #999;
+            .iconfont {
+                color: #999;
+                margin-right: 2px;
+                // font-size: 23px;
+                // vertical-align: sub;
+            }
+        }
+        .person-content {
+            max-width: 130px;
+            vertical-align: middle;
+            display: inline-block;
+            @extend .text-overflow;
+        }
+        .logout-box {
+            height: 45px;
+            cursor: pointer;
+            text-align: center;
+            background-color: #eceff3;
+            line-height: 45px;
+            &:hover {
+                color: #8195df;
+                .iconfont{
+                    color: #8195df;
+                }
+            }
+            .iconfont {
+                // font-size: 23px;
+                vertical-align: middle;
+            }
+        }
+    }
+}

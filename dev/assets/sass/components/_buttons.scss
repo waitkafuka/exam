@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* 按钮*/
+
+.btn {
+    @at-root {
+        //在这里编写
+        #{&} {
+            line-height: 30px;
+            color:#fff;
+            padding: 0 15px;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 3px;
+            min-width: 100px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        &:hover{
+            opacity: .9;
+        }
+    }
+}
+
+
+/* 按钮颜色 */
+
+.btn {
+    @at-root {
+        #{&}-orange {
+            @include btn-bg-color(#ff9037);
+        }
+        #{&}-gray{
+            @include btn-bg-color(#fcfcfc);
+            border:1px solid #ddd;
+            color:#959595;
+        }
+        #{&}-cancel{
+            @include btn-bg-color(#dedede);
+            border:1px solid #dedede;
+            color:#959595;
+        }
+    }
+}

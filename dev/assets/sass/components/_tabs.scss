@@ -1,0 +1,82 @@
+@charset "utf-8";
+.tab-btn {
+    width: 100%;
+    span {
+        display: inline-block;
+        font-size:px2em(12px);
+        color: $gray50;
+        border: 1px solid $bd-color;
+        background-color: #FFF;
+        padding: 8px;
+        border-radius: 3px;
+        margin-right: 5px;
+        line-height: 100%;
+        &.current,
+        &:active {
+            background-color: $skin-btn-orange;
+            border: 1px solid $skin-btn-orange;
+            color: #fff;
+        }
+        &.disabled {
+            background-color: #FFF;
+            border: 1px solid $bg-color;
+            color: $bd-color;
+        }
+    }
+}
+
+.ui-tabs {
+    width: 100%;
+    @extend %clearfix;
+    @extend .title-ms;
+    text-align: center;
+    line-height: 42px;
+    color: $gray50;
+    &.three-items {
+        li,a {
+            width: 33.3%;
+        }
+    }
+    &.four-items {
+        li,a {
+            width: 25%;
+        }
+    }
+    li {
+        a{
+            width: 100%;
+        }
+    }
+    li,a {
+        display: block;
+         width: 50%;
+         background-color: $bd-color;
+        border-bottom: 2px solid $bd-color;
+        border-left: 1px solid $bg-color;
+        float: left;
+        @extend %border-box;
+         &:last-child {
+            border-right: none;
+        }
+        &.current {
+            position: relative;
+            background-color: #FFF;
+            border-bottom: 2px solid #0c7dc1;
+            color: $skin-blue;
+            &:after {
+                left: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-width: 5px;
+                margin-left: -5px;
+                bottom: -10px;
+                border-color: rgba(12, 125, 193, 0);
+                border-top-color: #0c7dc1;
+            }
+        }
+    }
+}

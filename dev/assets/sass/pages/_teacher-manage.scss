@@ -1,0 +1,124 @@
+.tm-content-wrap {
+    padding: 0 20px;
+}
+
+.main-content-box {
+    .btn-gray {
+        margin-left: 20px;
+    }
+}
+
+.list-table {
+    a {
+        margin-left: 80px;
+        &:hover {
+            text-decoration: none;
+            opacity: .8;
+        }
+    }
+    td a:first-child {
+        margin-left: 0;
+    }
+}
+
+.w50 {
+    width: 50px;
+}
+
+.tool-bar-wrap {
+    padding: 10px 0;
+    text-align: right;
+    .btn {
+        margin-left: 10px;
+    }
+}
+
+.all-select-wrap {
+    display: inline-block;
+    text-align: center;
+}
+
+.oper-box {
+    margin-top: 10px;
+    .all-select-wrap {
+        vertical-align: 1px;
+    }
+}
+
+.add-tc-content-box,
+.import-tc-content-box {
+    padding: 40px 70px;
+    ul {
+        li {
+            margin-top: 20px;
+        }
+        li:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.input {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    width: 340px;
+    padding-left: 10px;
+}
+
+.import-tc-content-box {
+    padding: 30px 40px;
+    table {
+        td {
+            line-height: 25px;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+    }
+}
+
+.step-box {
+    width: 60px;
+    line-height: 25px;
+    color: #8195df;
+    text-align: center;
+    background-color: #d6ddf5;
+    border-radius: 12.5px;
+}
+
+.file-upload-input-box {
+    width: 365px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    margin-top: 15px;
+    input {
+        border: none;
+        line-height: 38px;
+        // outline: none;
+        width: 287px;
+        background: #fafafa;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    .upload-btn {
+        cursor: pointer;
+        width: 75px;
+        border-left: 1px solid #dcdcdc;
+        text-align: center;
+        display: block;
+        float: right;
+        line-height: 38px;
+        &:hover {
+            background-color: #fafafa;
+            opacity: .9;
+        }
+    }
+}
+
+.btn.disabled {
+    cursor: not-allowed;
+}

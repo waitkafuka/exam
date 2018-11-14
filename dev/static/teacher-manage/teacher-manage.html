@@ -1,0 +1,180 @@
+@@include('../../tpl/res/header.tpl',{ "title":"学易新高考" }) @@include('../../tpl/res/sidebar.tpl',{ "currentPosition":"教师管理" })
+<!--主体部分-->
+<div class="main-container">
+    @@include('../../tpl/res/bread-box.tpl',{ "currentPosition":"教师管理" })
+    <div class="main-content-box">
+        <div class="tm-content-wrap">
+            <!--工具条-->
+            <div class="tool-bar-wrap">
+                <span class="btn btn-orange J-add-teacher">
+                    <i class="iconfont xgk-icon-tianjia"></i>
+                    添加教师
+                </span>
+                <span class="btn btn-orange J-import-teacher">
+                    <i class="iconfont xgk-icon-daoru"></i>
+                    导入教师
+                </span>
+            </div>
+            <!--列表-->
+            <table class="list-table">
+                <tr>
+                    <th class="w50"></th>
+                    <th>工号</th>
+                    <th>姓名</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>20180192</td>
+                    <td>爱新觉罗媚</td>
+                    <td>
+                        <a href="#" class="J-edit-btn" item-id="js1">
+                            <i class="iconfont xgk-icon-bianji"></i> 编辑
+                        </a>
+                        <a href="#" class="J-del-btn" item-id="js1">
+                            <i class="iconfont xgk-icon-shanchu"></i> 删除
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>20180192</td>
+                    <td>爱新觉罗媚</td>
+                    <td>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-bianji"></i> 编辑
+                        </a>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-shanchu"></i> 删除
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>20180192</td>
+                    <td>爱新觉罗媚</td>
+                    <td>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-bianji"></i> 编辑
+                        </a>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-shanchu"></i> 删除
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>20180192</td>
+                    <td>爱新觉罗媚</td>
+                    <td>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-bianji"></i> 编辑
+                        </a>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-shanchu"></i> 删除
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>20180192</td>
+                    <td>爱新觉罗媚</td>
+                    <td>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-bianji"></i> 编辑
+                        </a>
+                        <a href="#">
+                            <i class="iconfont xgk-icon-shanchu"></i> 删除
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <div class="oper-box">
+                <span class="all-select-wrap w50">
+                    <input type="checkbox" id="select-all">
+                </span>
+                <label for="select-all">全选</label>
+                <span class="btn btn-gray disabled">
+                    删除
+                </span>
+                <span class="btn btn-orange">
+                    删除
+                </span>
+            </div>
+            <div class="pagination-wrap">
+                <span class="page-info">
+                    20条/页
+                </span>
+                <span class="page-info">
+                    共999条
+                </span>
+                <ul>
+                    <li class="disabled">
+                        上一页
+                    </li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li class="active">5</li>
+                    <li>···</li>
+                    <li>100</li>
+                    <li>101</li>
+                    <li>102</li>
+                    <li>下一页</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--添加教师 弹窗内容 只是个模板，弹窗弹出后，该内容会被删除，移动到弹窗内-->
+<div class="add-tc-content-box" style="display:none">
+    <ul>
+        <li>
+            <span class="item-name">工号：</span>
+            <input type="text" class="input J-work-num" placeholder="＞＝4位，＜＝20位的字母、数字组合">
+        </li>
+        <li>
+            <span class="item-name">姓名：</span>
+            <input type="text" class="input J-name" placeholder="＞＝4位，＜＝20位的字母、数字组合">
+        </li>
+    </ul>
+</div>
+<!--导入教师弹窗-->
+<div class="import-tc-content-box" style="display:none">
+    <table>
+        <tr>
+            <td>
+                <div class="step-box">
+                    第一步
+                </div>
+            </td>
+            <td>
+                <p> 请根据导入模板的格式整理需要导入的数据 </p>
+                <p class="mt15 mb15"> <a href="#">下载模板</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="step-box">
+                    第二步
+                </div>
+            </td>
+            <td>
+                <p>请上传需要导入的文件</p>
+                <div class="file-upload-input-box">
+                    <input type="text" readonly>
+                    <span class="upload-btn">
+                        浏览
+                    </span>
+                </div>
+                <input type="file" class="upload-file-btn" style="display:none">
+            </td>
+        </tr>
+    </table>
+</div>
+@@include('../../tpl/res/js.tpl')
+<script src="../../assets/js/teacher-manage/teacher-manage.js"></script>
+</body>
+
+</html>

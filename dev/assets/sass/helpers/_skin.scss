@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* 颜色 */
+
+.s {
+    @at-root {
+        #{&}-blue {
+            color: $skin-blue; //蓝色
+        }
+        #{&}-blue80 {
+            color: #0c7dc1; //蓝色
+        }
+        #{&}-blue-let {
+            color: $skin-blue-let; //浅蓝
+        }
+        #{&}-blue-low {
+            color: $skin-blue-low; //深绿
+        }
+        #{&}-orange {
+            color: $skin-btn-orange;
+            // color: $skin-orange; //橙色
+        }
+        #{&}-orange-let {
+            color: $skin-orange-let; //浅橙
+        }
+        #{&}-green {
+            color: $skin-green; //绿色
+        }
+        #{&}-purple {
+            color: $skin-purple; //紫色
+        }
+        #{&}-red {
+            color: red; //红色
+        }
+        #{&}-pink {
+            color: $skin-pink; //粉色
+        }
+        #{&}-gray80 {
+            color: $gray80; //80%黑色
+        }
+        #{&}-gray50 {
+            color: $gray50; //50%黑色
+        }
+        #{&}-gray20 {
+            color: $gray20; //20%黑色
+        }
+    }
+}
